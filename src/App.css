@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* MAIN HEADER */
+.app-header {
+  background-color: #fffdf0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  color: black;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* TITLE (NAME) */
+.title {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Young Serif", serif;
+  font-size: 5vmin;
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.last-name {
+  padding-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.first-name, .last-name {
+  white-space: nowrap;
+}
+
+.smile {
+  width: 12vmin;
+  height: auto;
+}
+
+/* GRID BOX */
+.grid-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  background-color: #FFF8F0;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  box-shadow: 0 8px 0px rgba(0, 0, 0, 1);
+}
+
+.grid-box-text {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: max(5vmin, 30px);
+  color: black;
+  text-align: center;
+}
+
+.grid-box-icon {
+  height: auto;
+  margin-right: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 65%;
+  max-width: 1000px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* COPYRIGHT */
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: "Lexend", sans-serif;
+  font-size: 15px;
+  color: gray;
 }
