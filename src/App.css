@@ -21,6 +21,23 @@
   width: 100%;
   max-width: 100%;
   flex-wrap: wrap;
+  transition: transform 0.2s ease; /* Add a transition for smooth animation */
+}
+
+.smile:hover {
+  animation: bounce 0.4s ease; /* Apply the bounce animation on hover */
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1); /* Initial scale */
+  }
+  50% {
+    transform: scale(1.1); /* Scale up halfway through */
+  }
+  100% {
+    transform: scale(1); /* Back to original scale */
+  }
 }
 
 .last-name {
@@ -36,6 +53,7 @@
   height: auto;
 }
 
+
 /* GRID BOX */
 .grid-box {
   display: flex;
@@ -49,6 +67,8 @@
   margin-bottom: 25px;
   margin-left: 25px;
   box-shadow: 0 8px 0px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .grid-box-text {
@@ -73,6 +93,11 @@
   max-width: 1000px;
 }
 
+.grid-box:hover {
+  background-color: #fff5f0;
+  box-shadow: -8px 7px 0px rgba(0, 0, 0, 1);
+}
+
 /* RESPONSIVENESS */
 @media (max-width: 1024px) {
   .grid-container {
@@ -81,10 +106,14 @@
 }
 
 /* COPYRIGHT */
+.footer {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
 .copyright {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
   font-family: "Lexend", sans-serif;
   font-size: 15px;
   color: gray;
