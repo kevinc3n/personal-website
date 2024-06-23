@@ -1,5 +1,3 @@
-// components/main_page/grid_box.js
-
 import React from 'react';
 
 const GridBox = ({ text, image, imageWidth, onClick }) => {

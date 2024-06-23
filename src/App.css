@@ -21,22 +21,22 @@
   width: 100%;
   max-width: 100%;
   flex-wrap: wrap;
-  transition: transform 0.2s ease; /* Add a transition for smooth animation */
+  transition: transform 0.2s ease;
 }
 
 .smile:hover {
-  animation: bounce 0.4s ease; /* Apply the bounce animation on hover */
+  animation: bounce 0.4s ease;
 }
 
 @keyframes bounce {
   0% {
-    transform: scale(1); /* Initial scale */
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.1); /* Scale up halfway through */
+    transform: scale(1.1);
   }
   100% {
-    transform: scale(1); /* Back to original scale */
+    transform: scale(1);
   }
 }
 
@@ -53,7 +53,6 @@
   height: auto;
 }
 
-
 /* GRID BOX */
 .grid-box {
   display: flex;
@@ -61,7 +60,7 @@
   justify-content: center;
   height: 130px;
   background-color: #FFF8F0;
-  border: 3px solid black;
+  border: 3.5px solid black;
   border-radius: 20px;
   margin-right: 25px;
   margin-bottom: 25px;
@@ -69,6 +68,7 @@
   box-shadow: 0 8px 0px rgba(0, 0, 0, 1);
   cursor: pointer;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  animation: float 3s ease-in-out infinite;
 }
 
 .grid-box-text {
@@ -94,8 +94,17 @@
 }
 
 .grid-box:hover {
-  background-color: #fff5f0;
+  background-color: #ffe4a8;
   box-shadow: -8px 7px 0px rgba(0, 0, 0, 1);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 /* RESPONSIVENESS */

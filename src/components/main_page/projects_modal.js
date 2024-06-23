@@ -24,7 +24,7 @@ const ModalComponent = ({ open, onClose, text }) => {
           boxShadow: '0 8px 0px rgba(0, 0, 0, 1)'
         }}
       >
-        <h2 id="modal-modal-title">Hi</h2>
+        <h2 id="modal-modal-title">Projects</h2>
         <p id="modal-modal-description">{text}</p>
         {/* <Button onClick={onClose}>Close</Button> */}
       </Box>
