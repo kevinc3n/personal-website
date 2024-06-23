@@ -31,6 +31,9 @@ const ModalComponent = ({ open, onClose }) => {
           border: '3.5px solid #000',
           display: 'flex',
           flexDirection: { xs: 'column-reverse', md: 'row' },
+          '@media (max-width: 500px)': {
+            height: '70%',
+          },
         }}
       >
         <Box
@@ -54,8 +57,8 @@ const ModalComponent = ({ open, onClose }) => {
               alignItems: 'center',
               justifyContent: 'center',
               '@media (max-width: 1000px)': {
-                width: '250px',
-                height: '250px',
+                width: '225px',
+                height: '225px',
               },
               '@media (max-width: 500px)': {
                 width: '200px',
