@@ -141,7 +141,7 @@ const ModalComponent = ({ open, onClose }) => {
             flex: 1,
             mt: { xs: 2, md: 0 },
             pl: { md: 2 },
-            order: { xs: 2, md: 1 },
+            order: { xs: 1, md: 1 },
             overflow: 'hidden',
             position: 'relative',
             display: 'flex',
