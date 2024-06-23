@@ -194,7 +194,7 @@ const ModalComponent = ({ open, onClose }) => {
                 <li key={index} style={{ marginBottom: '10px', cursor: 'pointer', fontFamily: '"Montserrat", sans-serif' }} onClick={() => toggleExpand(index)}>
                   <span style={{ fontFamily: '"Belanosima", sans-serif', fontSize: 25 }}>{item.title}</span>
                   {expandedIndex === index && (
-                    <div style={{ marginTop: '5px'}}>
+                    <div style={{ marginTop: '5px', marginLeft: '25px'}}>
                       {item.content}
                     </div>
                   )}
