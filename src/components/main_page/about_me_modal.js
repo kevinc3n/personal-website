@@ -22,23 +22,23 @@ const ModalComponent = ({ open, onClose }) => {
   const listItems = [
     {
       title: "➤ Education",
-      content: "● I am a fourth-year undergraduate at the University of Florida, majoring in Computer Science with a minor in Digital Arts & Sciences.",
+      content: "I am a fourth-year undergraduate at the University of Florida, majoring in Computer Science with a minor in Digital Arts & Sciences.",
     },
     {
-      title: "➤ Software Engineering",
-      content: "● My academic journey has been driven by a passion for software engineering, with a particular interest in machine learning, full stack development, and DevOps/MLOps. This blend of skills allows me to tackle complex projects, ensuring they are both innovative and efficiently executed.",
+      title: "➤ SWE",
+      content: "My academic journey has been driven by a passion for software engineering, with a particular interest in machine learning, full stack development, and DevOps/MLOps. This blend of skills allows me to tackle complex projects, ensuring they are both innovative and efficiently executed.",
     },
     {
       title: "➤ Digital Art",
-      content: "● The Digital Arts & Sciences minor has provided me with a unique perspective on the intersection between design and engineering, enabling me to merge my technical expertise with my creative passions. This interdisciplinary approach enriches my ability to create user-friendly and aesthetically pleasing software solutions.",
+      content: "The Digital Arts & Sciences minor has provided me with a unique perspective on the intersection between design and engineering, enabling me to merge my technical expertise with my creative passions. This interdisciplinary approach enriches my ability to create user-friendly and aesthetically pleasing software solutions.",
     },
     {
       title: "➤ Music",
-      content: "● Beyond computer science, I have been deeply involved in music production since 2018. I take pride in leading the entire creative process, from producing and writing to mixing and designing songs, videos, and clothing. This experience has honed my project management and creative skills, further complementing my technical background.",
+      content: "Beyond computer science, I have been deeply involved in music production since 2018. I take pride in leading the entire creative process, from producing and writing to mixing and designing songs, videos, and clothing. This experience has honed my project management and creative skills, further complementing my technical background.",
     },
     {
-      title: "➤ Personal Statement",
-      content: "● Through my diverse interests and academic pursuits, I strive to bring a holistic and innovative approach to all my endeavors, whether they are in technology or the arts.",
+      title: "➤ Goals",
+      content: "Through my diverse interests and academic pursuits, I strive to bring a holistic and innovative approach to all my endeavors, whether they are in technology or the arts.",
     },
   ];
 
@@ -160,9 +160,10 @@ const ModalComponent = ({ open, onClose }) => {
               marginBottom: '10px',
               fontFamily: '"Young Serif", serif',
               textAlign: 'center',
+              fontSize: 25,
             }}
           >
-            Hello! My Name Is Kevin 😀
+            Hello! My Name Is Kevin Cen
           </h2>
           <Box
             id="modal-modal-description"
@@ -193,7 +194,7 @@ const ModalComponent = ({ open, onClose }) => {
                 <li key={index} style={{ marginBottom: '10px', cursor: 'pointer', fontFamily: '"Montserrat", sans-serif' }} onClick={() => toggleExpand(index)}>
                   <span style={{ fontFamily: '"Belanosima", sans-serif', fontSize: 25 }}>{item.title}</span>
                   {expandedIndex === index && (
-                    <div style={{ marginTop: '5px' }}>
+                    <div style={{ marginTop: '5px'}}>
                       {item.content}
                     </div>
                   )}
