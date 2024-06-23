@@ -1,10 +1,10 @@
 import React from 'react';
-import { Modal, Box } from '@mui/material';
+import { Modal, Box, IconButton } from '@mui/material';
 import { FaInstagram, FaSpotify, FaLinkedin } from 'react-icons/fa';
+import CloseIcon from '@mui/icons-material/Close';
 import aboutMeImage from '../../assets/images/me.webp';
 
 const ModalComponent = ({ open, onClose }) => {
-
   const linkedinUrl = 'https://www.linkedin.com/in/kevincen/';
   const instagramUrl = 'https://www.instagram.com/kidthekevin/';
   const spotifyUrl = 'https://open.spotify.com/artist/1nCvm6kb6paTq9Hv73RSKB';
@@ -23,7 +23,7 @@ const ModalComponent = ({ open, onClose }) => {
           left: '50%',
           transform: 'translate(-50%, -50%)',
           height: '50%',
-          width: '45%',
+          width: '50%',
           boxShadow: '0 4px 0px rgba(0, 0, 0, 1)',
           bgcolor: '#fffdf0',
           p: 4,
@@ -31,15 +31,28 @@ const ModalComponent = ({ open, onClose }) => {
           border: '3.5px solid #000',
           display: 'flex',
           flexDirection: { xs: 'column-reverse', md: 'row' },
-          '@media (max-width: 500px)': {
-            height: '70%',
+          '@media (max-width: 900px)': {
+            height: '80%',
+            width: '65%',
           },
         }}
       >
+        <IconButton
+          aria-label="close"
+          onClick={onClose}
+          sx={{
+            position: 'absolute',
+            top: 8,
+            right: 8,
+            color: 'black',
+          }}
+        >
+          <CloseIcon sx={{ fontSize: 30 }} />
+        </IconButton>
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'column', 
+            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             order: { xs: 2, md: 1 },
@@ -98,16 +111,15 @@ const ModalComponent = ({ open, onClose }) => {
             order: { xs: 2, md: 1 },
             overflow: 'hidden',
             position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
           }}
         >
           <h2 id="modal-modal-title" style={{ marginTop: 0, marginBottom: '5px', fontFamily: '"Young Serif", serif' }}>Hello! I'm Kevin</h2>
           <Box
             id="modal-modal-description"
             sx={{
-              maxHeight: { xs: '70%', md: '90%' },
-              '@media (max-width: 899px)': {
-                maxHeight: '70%',
-              },
               overflowY: 'auto',
               paddingRight: '15px',
               '&::-webkit-scrollbar': {
@@ -123,27 +135,28 @@ const ModalComponent = ({ open, onClose }) => {
               '&::-webkit-scrollbar-thumb:hover': {
                 background: '#2e2d2d',
               },
+              whiteSpace: 'pre-wrap',
+              fontFamily: '"Montserrat", sans-serif',
+              lineHeight: 1.5,
             }}
           >
-            <div style={{ whiteSpace: 'pre-wrap', fontFamily: '"Montserrat", sans-serif', lineHeight: 1.5 }}>
-              <ul style={{ marginTop: 0, marginBottom: 5, padding: 0 }}>
-                <li style={{ marginBottom: '10px' }}>
-                  ➤ I am a fourth-year undergraduate at the University of Florida, majoring in Computer Science with a minor in Digital Arts & Sciences.
-                </li>
-                <li style={{ marginBottom: '10px' }}>
-                  ➤ My academic journey has been driven by a passion for software engineering, with a particular interest in machine learning, full stack development, and DevOps/MLOps. This blend of skills allows me to tackle complex projects, ensuring they are both innovative and efficiently executed.
-                </li>
-                <li style={{ marginBottom: '10px' }}>
-                  ➤ The Digital Arts & Sciences minor has provided me with a unique perspective on the intersection between design and engineering, enabling me to merge my technical expertise with my creative passions. This interdisciplinary approach enriches my ability to create user-friendly and aesthetically pleasing software solutions.
-                </li>
-                <li style={{ marginBottom: '10px' }}>
-                  ➤ Beyond computer science, I have been deeply involved in music production since 2018. I take pride in leading the entire creative process, from producing and writing to mixing and designing songs, videos, and clothing. This experience has honed my project management and creative skills, further complementing my technical background.
-                </li>
-                <li style={{ marginBottom: '10px' }}>
-                  ➤ Through my diverse interests and academic pursuits, I strive to bring a holistic and innovative approach to all my endeavors, whether they are in technology or the arts.
-                </li>
-              </ul>
-            </div>
+            <ul style={{ marginTop: 0, marginBottom: 5, padding: 0 }}>
+              <li style={{ marginBottom: '10px' }}>
+                ➤ I am a fourth-year undergraduate at the University of Florida, majoring in Computer Science with a minor in Digital Arts & Sciences.
+              </li>
+              <li style={{ marginBottom: '10px' }}>
+                ➤ My academic journey has been driven by a passion for software engineering, with a particular interest in machine learning, full stack development, and DevOps/MLOps. This blend of skills allows me to tackle complex projects, ensuring they are both innovative and efficiently executed.
+              </li>
+              <li style={{ marginBottom: '10px' }}>
+                ➤ The Digital Arts & Sciences minor has provided me with a unique perspective on the intersection between design and engineering, enabling me to merge my technical expertise with my creative passions. This interdisciplinary approach enriches my ability to create user-friendly and aesthetically pleasing software solutions.
+              </li>
+              <li style={{ marginBottom: '10px' }}>
+                ➤ Beyond computer science, I have been deeply involved in music production since 2018. I take pride in leading the entire creative process, from producing and writing to mixing and designing songs, videos, and clothing. This experience has honed my project management and creative skills, further complementing my technical background.
+              </li>
+              <li style={{ marginBottom: '10px' }}>
+                ➤ Through my diverse interests and academic pursuits, I strive to bring a holistic and innovative approach to all my endeavors, whether they are in technology or the arts.
+              </li>
+            </ul>
           </Box>
         </Box>
       </Box>
