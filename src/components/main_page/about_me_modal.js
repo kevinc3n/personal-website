@@ -148,9 +148,6 @@ const ModalComponent = ({ open, onClose }) => {
             flexDirection: 'column',
             justifyContent: 'flex-start',
             marginLeft: 3,
-            '@media (max-width: 500px)': {
-              marginLeft: 0,
-            },
           }}
         >
           <h2 id="modal-modal-title" style={{ marginTop: 0, marginBottom: '10px', fontFamily: '"Young Serif", serif' }}>Hello! I'm Kevin</h2>
