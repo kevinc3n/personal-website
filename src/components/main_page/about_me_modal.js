@@ -148,9 +148,22 @@ const ModalComponent = ({ open, onClose }) => {
             flexDirection: 'column',
             justifyContent: 'flex-start',
             marginLeft: 3,
+            '@media (max-width: 500px)': {
+              marginLeft: 0,
+            },
           }}
         >
-          <h2 id="modal-modal-title" style={{ marginTop: 0, marginBottom: '10px', fontFamily: '"Young Serif", serif' }}>Hello! I'm Kevin</h2>
+          <h2
+            id="modal-modal-title"
+            style={{
+              marginTop: 0,
+              marginBottom: '10px',
+              fontFamily: '"Young Serif", serif',
+              textAlign: 'center',
+            }}
+          >
+            Hello! My Name Is Kevin 😀
+          </h2>
           <Box
             id="modal-modal-description"
             sx={{
@@ -158,6 +171,7 @@ const ModalComponent = ({ open, onClose }) => {
               paddingRight: '15px',
               '&::-webkit-scrollbar': {
                 width: '13px',
+                display: 'auto',
               },
               '&::-webkit-scrollbar-track': {
                 background: '#fffdf0',
