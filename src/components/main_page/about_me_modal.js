@@ -65,7 +65,7 @@ const ModalComponent = ({ open, onClose }) => {
           display: 'flex',
           flexDirection: { xs: 'column-reverse', md: 'row' },
           '@media (max-width: 900px)': {
-            height: '80%',
+            height: '70%',
             width: '65%',
           },
         }}

@@ -26,7 +26,6 @@ const ModalComponent = ({ open, onClose, text }) => {
       >
         <h2 id="modal-modal-title">Skills</h2>
         <p id="modal-modal-description">{text}</p>
-        {/* <Button onClick={onClose}>Close</Button> */}
       </Box>
     </Modal>
   );
