@@ -173,18 +173,13 @@ const ModalComponent = ({ open, onClose }) => {
               overflowY: 'auto',
               paddingRight: '15px',
               '&::-webkit-scrollbar': {
-                width: '13px',
-                display: 'auto',
+                width: '0',
               },
               '&::-webkit-scrollbar-track': {
-                background: '#fffdf0',
+                background: 'transparent',
               },
               '&::-webkit-scrollbar-thumb': {
-                background: '#000000',
-                borderRadius: '5px',
-              },
-              '&::-webkit-scrollbar-thumb:hover': {
-                background: '#2e2d2d',
+                background: 'transparent',
               },
               whiteSpace: 'pre-wrap',
               fontFamily: '"Montserrat", sans-serif',
@@ -199,9 +194,7 @@ const ModalComponent = ({ open, onClose }) => {
                 marginLeft: 8,
                 fontFamily: '"Young Serif", serif',
                 fontSize: 25,
-              }}
-              sx={{
-                textAlign: { xs: 'left', md: 'center' },
+                textAlign: 'center',
               }}
             >
               Hello! My Name Is Kevin Cen
