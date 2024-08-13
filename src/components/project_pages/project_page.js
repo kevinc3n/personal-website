@@ -10,8 +10,30 @@ const ProjectPage = () => {
   const { project } = location.state || {};
 
   if (!project) {
-    return <Typography variant="h4">Project not found.</Typography>;
-  }
+    return (
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh',
+          textAlign: 'center',
+          backgroundColor: '#fffdf0',
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{ fontFamily: '"Young Serif", serif', marginBottom: 2 }}
+        >
+          Stale request! Please access through the Project tab on the main page.
+        </Typography>
+        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <Navbar />
+        </Box>
+      </Box>
+    );
+  }  
 
   const renderList = (items, isLink = false) => {
     if (Array.isArray(items)) {
@@ -31,7 +53,7 @@ const ProjectPage = () => {
         </ul>
       );
     }
-    return <Typography variant="body1">No data available</Typography>;
+    return <Typography variant="body1">Error: No data available</Typography>;
   };
 
   return (
@@ -54,7 +76,7 @@ const ProjectPage = () => {
           align="left"
           sx={{ fontFamily: '"Young Serif", serif', fontWeight: 700, fontSize: '2.5rem' }}
         >
-          {project.text}
+          {project.name}
         </Typography>
         <Box
           sx={{

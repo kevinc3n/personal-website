@@ -21,8 +21,8 @@ const ModalComponent = ({ open, onClose }) => {
     arrows: true,
   };
 
-  const handleSlideClick = (experiences) => {
-    navigate(`/experience/${experiences.name}`, { state: { experiences } });
+  const handleSlideClick = (experience) => {
+    navigate(`/experience/${experience.name}`, { state: { experience } });
   };
 
   return (

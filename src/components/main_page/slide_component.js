@@ -32,7 +32,7 @@ const SlideComponent = ({ imageUrl, onClick, text }) => {
           maxHeight: '100%',
           objectFit: 'cover',
           cursor: 'pointer',
-          filter: 'blur(20px)',
+          filter: 'brightness(0.7) blur(2px)',
         }}
       />
       <Box

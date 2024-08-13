@@ -12,6 +12,7 @@ import ExperienceModal from './components/main_page/experience_modal';
 import ProjectsModal from './components/main_page/projects_modal';
 import SkillsModal from './components/main_page/skills_modal';
 import ProjectPage from './components/project_pages/project_page';
+import ExperiencePage from './components/experience_pages/experience_page';
 import Footer from './components/footer'; 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
           </header>
         } />
         <Route path="/project/:projectName" element={<ProjectPage />} />
+        <Route path="/experience/:experienceName" element={<ExperiencePage />} />
       </Routes>
     </Router>
   );

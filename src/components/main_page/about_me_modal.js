@@ -26,21 +26,21 @@ const ModalComponent = ({ open, onClose }) => {
     },
     {
       title: "➤ SWE",
-      content: "My academic journey has been driven by a passion for software engineering, with a particular interest in machine learning, full stack development, and DevOps/MLOps. This blend of skills allows me to tackle complex projects, ensuring they are both innovative and efficiently executed.",
+      content: "My academic journey has been driven by a passion for software engineering, with a particular interest in machine learning, full stack development, and DevOps/MLOps.",
     },
     {
       title: "➤ Digital Art",
-      content: "The Digital Arts & Sciences minor has provided me with a unique perspective on the intersection between design and engineering, enabling me to merge my technical expertise with my creative passions. This interdisciplinary approach enriches my ability to create user-friendly and aesthetically pleasing software solutions.",
+      content: "My minor in Digital Arts & Sciences has provided me with a unique perspective on the intersection between design and engineering, enabling me to merge my technical expertise with my creative passions.",
     },
     {
       title: "➤ Music",
-      content: "Beyond computer science, I have been deeply involved in music production since 2018. I take pride in leading the entire creative process, from producing and writing to mixing and designing songs, videos, and clothing. This experience has honed my project management and creative skills, further complementing my technical background.",
+      content: "Since 2018, I've immersed myself in music production, overseeing every aspect from creation to design.\nMusic has sharpened my project management and creative skills, complementing my technical background.",
     },
     {
       title: "➤ Goals",
       content: "Through my diverse interests and academic pursuits, I strive to bring a holistic and innovative approach to all my endeavors, whether they are in technology or the arts.",
     },
-  ];
+  ];   
 
   return (
     <Modal
@@ -121,23 +121,32 @@ const ModalComponent = ({ open, onClose }) => {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              mt: 2,
+              mt: 3,
               gap: 2,
+              '& a': {
+                textDecoration: 'none',
+                color: 'inherit',
+                transition: 'transform 0.3s ease',
+                '&:hover': {
+                  transform: 'scale(1.1)',
+                },
+              },
             }}
           >
-            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
               <FaLinkedin style={{ fontSize: 30 }} />
             </a>
-            <a href={instagramUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
               <FaInstagram style={{ fontSize: 30 }} />
             </a>
-            <a href={spotifyUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a href={spotifyUrl} target="_blank" rel="noopener noreferrer">
               <FaSpotify style={{ fontSize: 30 }} />
             </a>
           </Box>
         </Box>
         <Box
           sx={{
+            paddingTop: '15px',
             flex: 1,
             mt: { xs: 2, md: 0 },
             pl: { md: 2 },
@@ -153,20 +162,7 @@ const ModalComponent = ({ open, onClose }) => {
             },
           }}
         >
-          <h2
-            id="modal-modal-title"
-            style={{
-              marginTop: 0,
-              marginBottom: '10px',
-              fontFamily: '"Young Serif", serif',
-              textAlign: 'center',
-              fontSize: 25,
-            }}
-          >
-            Hello! My Name Is Kevin Cen
-          </h2>
           <Box
-            id="modal-modal-description"
             sx={{
               overflowY: 'auto',
               paddingRight: '15px',
@@ -189,12 +185,49 @@ const ModalComponent = ({ open, onClose }) => {
               lineHeight: 1.5,
             }}
           >
-            <ul style={{ marginTop: 0, marginBottom: 5, padding: 0 }}>
+            <h2
+              id="modal-modal-title"
+              style={{
+                marginTop: 0,
+                marginBottom: '10px',
+                marginLeft: 8,
+                fontFamily: '"Young Serif", serif',
+                fontSize: 25,
+              }}
+              sx={{
+                textAlign: { xs: 'left', md: 'center' },
+              }}
+            >
+              Hello! My Name Is Kevin Cen
+            </h2>
+             <ul style={{ marginTop: 0, marginBottom: 5, padding: 0 }}>
               {listItems.map((item, index) => (
-                <li key={index} style={{ marginBottom: '10px', cursor: 'pointer', fontFamily: '"Montserrat", sans-serif' }} onClick={() => toggleExpand(index)}>
-                  <span style={{ fontFamily: '"Belanosima", sans-serif', fontSize: 25 }}>{item.title}</span>
+                <li
+                  key={index}
+                  style={{
+                    marginBottom: '10px',
+                    cursor: 'pointer',
+                    fontFamily: '"Montserrat", sans-serif',
+                    transition: 'transform 0.3s ease',
+                    listStyleType: 'none',
+                    marginLeft: '5px'
+                  }}
+                  onClick={() => toggleExpand(index)}
+                >
+                  <span
+                    style={{
+                      fontFamily: '"Belanosima", sans-serif',
+                      fontSize: 25,
+                      display: 'inline-block',
+                      transition: 'transform 0.3s ease',
+                    }}
+                    onMouseEnter={(e) => (e.target.style.transform = 'scale(1.05)')}
+                    onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
+                  >
+                    {item.title}
+                  </span>
                   {expandedIndex === index && (
-                    <div style={{ marginTop: '5px', marginLeft: '25px'}}>
+                    <div style={{ marginTop: '5px', marginLeft: '25px' }}>
                       {item.content}
                     </div>
                   )}
