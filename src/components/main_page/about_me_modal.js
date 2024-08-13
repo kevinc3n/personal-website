@@ -40,7 +40,7 @@ const ModalComponent = ({ open, onClose }) => {
       title: "➤ Goals",
       content: "Through my diverse interests and academic pursuits, I strive to bring a holistic and innovative approach to all my endeavors, whether they are in technology or the arts.",
     },
-  ];   
+  ];
 
   return (
     <Modal
@@ -65,8 +65,13 @@ const ModalComponent = ({ open, onClose }) => {
           display: 'flex',
           flexDirection: { xs: 'column-reverse', md: 'row' },
           '@media (max-width: 900px)': {
-            height: '70%',
-            width: '65%',
+            top: '4%',
+            left: '10%',
+            right: '10%',
+            bottom: '4%',
+            height: 'auto',
+            width: 'auto',
+            transform: 'none',
           },
         }}
       >
@@ -102,6 +107,7 @@ const ModalComponent = ({ open, onClose }) => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
+              marginTop: 3,
               '@media (max-width: 1000px)': {
                 width: '225px',
                 height: '225px',

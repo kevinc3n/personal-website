@@ -101,8 +101,8 @@ const SkillsComponent = () => (
             <Grid item xs={12} sm={6} md={4} key={skillIndex} style={{ textAlign: 'center' }}>
               <Card sx={{ position: 'relative', minHeight: 150, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRadius: 4, border: '3.5px solid #000', boxShadow: '0 8px 0px rgba(0, 0, 0, 1)', backgroundColor: '#FFF8F0' }}>
                 <CardContent>
-                  <CircularProgressWithLabel value={skill.level} />
-                  <Typography variant="h6" component="div" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 2, fontFamily: '"Belanosima", sans-serif' }}>
+                  <CircularProgressWithLabel value={skill.level}/>
+                  <Typography variant="h5" component="div" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 2, fontFamily: '"Belanosima", sans-serif' }}>
                     {skill.icon}
                     <span style={{ marginLeft: 8 }}>{skill.name}</span>
                   </Typography>
@@ -115,10 +115,10 @@ const SkillsComponent = () => (
     ))}
     
     <Box sx={{ marginTop: 4, textAlign: 'center' }}>
-      <Typography variant="h6" component="div" sx={{ fontFamily: '"Belanosima", sans-serif' }}>Other Skills:</Typography>
+      <Typography variant="h5" component="div" sx={{ fontFamily: '"Belanosima", sans-serif' }}>Other Skills:</Typography>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 1, marginTop: 2 }}>
         {otherSkills.map((skill, index) => (
-          <Chip sx={{ fontSize: 18, color: 'black', fontFamily: '"Belanosima", sans-serif'}} key={index} label={skill} variant="outlined" />
+          <Chip sx={{ fontSize: 20, color: 'black', fontFamily: '"Belanosima", sans-serif'}} key={index} label={skill} variant="outlined" />
         ))}
       </Box>
     </Box>
