@@ -13,7 +13,8 @@ import ProjectsModal from './components/main_page/projects_modal';
 import SkillsModal from './components/main_page/skills_modal';
 import ProjectPage from './components/project_pages/project_page';
 import ExperiencePage from './components/experience_pages/experience_page';
-import Footer from './components/footer'; 
+import Footer from './components/footer';
+import NotFoundPage from './components/not_found_page/not_found';
 
 function App() {
   const [openModal, setOpenModal] = useState({
@@ -59,6 +60,7 @@ function App() {
         } />
         <Route path="/project/:projectName" element={<ProjectPage />} />
         <Route path="/experience/:experienceName" element={<ExperiencePage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );
