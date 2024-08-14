@@ -164,9 +164,7 @@ const ModalComponent = ({ open, onClose }) => (
           <CloseIcon sx={{ fontSize: 30 }} />
         </IconButton>
 
-        <Typography id="modal-modal-title" component="h2" sx={{ textAlign: 'center', fontFamily: '"Young Serif", serif', fontSize: 25 }}>
-          Skills
-        </Typography>
+        <h2 id="modal-modal-title" style={{ textAlign: 'center', marginTop: 0, fontFamily: '"Young Serif", serif', fontSize: 25 }}>Skills</h2>
         
         <Box sx={{ marginTop: 2, ...styles }}>
           <Typography

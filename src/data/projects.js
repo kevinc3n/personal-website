@@ -6,7 +6,7 @@ import site from '../assets/images/site.png';
 
 const projects = [
   {
-    name: 'strumme',
+    name: 'strum.me',
     imageUrl: strumme,
     text: 'strum.me',
     date: 'January 2024 - April 2024',
