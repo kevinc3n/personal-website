@@ -12,7 +12,9 @@ const NotFoundPage = () => {
         alignItems: 'center',
         height: '100vh',
         textAlign: 'center',
+        padding: '0 50px',
         backgroundColor: '#fffdf0',
+        boxSizing: 'border-box',
       }}
     >
       <Typography

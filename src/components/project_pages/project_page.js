@@ -9,32 +9,6 @@ const ProjectPage = () => {
   const location = useLocation();
   const { project } = location.state || {};
 
-  if (!project) {
-    return (
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '100vh',
-          textAlign: 'center',
-          backgroundColor: '#fffdf0',
-        }}
-      >
-        <Typography
-          variant="h4"
-          sx={{ fontFamily: '"Young Serif", serif', marginBottom: 2 }}
-        >
-          Stale request! Please access through the Project tab on the main page.
-        </Typography>
-        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-          <Navbar />
-        </Box>
-      </Box>
-    );
-  }  
-
   const renderList = (items, isLink = false) => {
     if (Array.isArray(items)) {
       return (
