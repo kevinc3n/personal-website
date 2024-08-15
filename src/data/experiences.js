@@ -17,6 +17,7 @@ const experiences = [
     contributions: [
       'Enhanced ML Model Deployment: Streamlined cloud detection model deployment using BentoML and Docker for easier usability.',
       'Improved API Functionality: Reworked API endpoints, added debugging features, and added support for tracking hardware usage (CPU and GPU metrics).',
+      'Assembled a dataset of 90 inputs for the cloud detection model, manually annotating those with inaccurate outputs to generate ground truth data for improved model retraining.',
       'Developed Feedback System: Created a user feedback system to log and retrieve \"good\" and \"bad\" API inputs for model retraining.'
     ],
     learned: [

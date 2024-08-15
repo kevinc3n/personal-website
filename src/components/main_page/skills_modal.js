@@ -3,13 +3,14 @@ import { Modal, Box, IconButton, Grid, Card, CardContent, Typography, CircularPr
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { FaPython, FaReact } from 'react-icons/fa';
-import { DiJavascript, DiJava, DiPhp } from 'react-icons/di';
+import { DiJava, DiPhp } from 'react-icons/di';
 import { PiFileCpp } from "react-icons/pi";
 import { SiFlask } from "react-icons/si";
 import { TbBrandNextjs, TbBrandGolang } from "react-icons/tb";
 import { PiLinuxLogo } from "react-icons/pi";
 import { DiMysql } from "react-icons/di";
 import { FaDocker } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
 
 const styles = {
   '@keyframes bounce': {
@@ -39,7 +40,7 @@ const skillSections = [
   {
     title: 'Backend Tools',
     skills: [
-      { name: 'JavaScript', level: 80, icon: <DiJavascript /> },
+      { name: 'JavaScript', level: 80, icon: <IoLogoJavascript /> },
       { name: 'Golang', level: 70, icon: <TbBrandGolang /> },
       { name: 'PHP', level: 70, icon: <DiPhp /> },
     ],

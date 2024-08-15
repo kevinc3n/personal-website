@@ -22,14 +22,14 @@ const ModalComponent = ({ open, onClose }) => {
   const listItems = [
     {
       title: "➤ Education",
-      content: "I am a fourth-year undergraduate at the University of Florida, majoring in Computer Science with a minor in Digital Arts & Sciences.",
+      content: "I am a fourth-year undergraduate at the University of Florida (UF), majoring in Computer Science with a minor in Digital Arts & Sciences.",
     },
     {
       title: "➤ SWE",
       content: "My academic journey has been driven by a passion for software engineering, with a particular interest in machine learning, full stack development, and DevOps/MLOps.",
     },
     {
-      title: "➤ Digital Art",
+      title: "➤ Digital Arts",
       content: "My minor in Digital Arts & Sciences has provided me with a unique perspective on the intersection between design and engineering, enabling me to merge my technical expertise with my creative passions.",
     },
     {
