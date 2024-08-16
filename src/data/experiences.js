@@ -7,7 +7,7 @@ const experiences = [
     name: 'Satlantis',
     imageUrl: satlantis,
     text: 'Satlantis',
-    date: 'May 2024 - Present',
+    date: 'May 2024 ➜ Present',
     role: 'Software Engineer Intern',
     description: [
       'Satlantis is a small-satellite solutions company that combines machine learning with satellite imagery to enhance Earth observation capabilities.',
@@ -27,13 +27,14 @@ const experiences = [
     ],
     links: [
       {title: 'Satlantis Website', url: 'https://www.satlantis.com/'},
+      {title: 'Satlantis (U.S.) LinkedIn', url: 'https://www.linkedin.com/company/satlantis-llc'},
     ],
   },
   {
     name: 'Research for AI in Education',
     imageUrl: aaimse,
     text: 'Research',
-    date: 'August 2023 - Present',
+    date: 'August 2023 ➜ Present',
     role: 'Undergraduate Research Intern',
     description: [
       "The Applications of Artificial Intelligence in Middle School Education (AAIMSE) project is a two-year research initiative led by the College of Education at the University of Florida, now in its second year.",
@@ -59,7 +60,7 @@ const experiences = [
     name: 'Hewlett-Packard (HP)',
     imageUrl: hp,
     text: 'HP',
-    date: 'June 2022 - August 2022',
+    date: 'June 2022 ➜ August 2022',
     role: 'Multimedia Production Intern',
     description: [
       'HP Workforce Experience is a telemetry and analytics platform that leverages deep learning to help IT optimize devices, software, and security for employees. It proactively identifies issues and enables scalable solutions.',

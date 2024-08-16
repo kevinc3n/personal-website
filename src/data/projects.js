@@ -9,7 +9,7 @@ const projects = [
     name: 'strum.me',
     imageUrl: strumme,
     text: 'strum.me',
-    date: 'January 2024 - April 2024',
+    date: 'January 2024 ➜ April 2024',
     description: [
       'A full-stack machine learning project designed to let users quickly identify ten types of acoustic guitar chords.',
       'Implemented, trained, and tuned a convolutional neural network (CNN) to interpret visual representations of audio waves and detect what chord classification it belonged to.',
@@ -33,7 +33,7 @@ const projects = [
     name: 'GatorChat',
     imageUrl: gatorchat,
     text: 'GatorChat',
-    date: 'January 2023 - April 2023',
+    date: 'January 2023 ➜ April 2023',
     description: [
       'A full-stack application that allows University of Florida (UF) students to connect and message one another on a centralized platform.',
       'Supports friend requests, private messaging, text and image transfer, and the ability to edit or delete messages in real-time.',
@@ -59,7 +59,7 @@ const projects = [
     name: 'trackScore.',
     imageUrl: trackscore,
     text: 'trackScore.',
-    date: 'June 2023 - September 2023',
+    date: 'June 2023 ➜ September 2023',
     description: [
       'A Next.js application designed to let users search and rate songs/albums from Spotify.',
       'Supports a search engine that catalogs songs, albums, and artists from Spotify and allows users to select and write reviews for a song or album.',
@@ -82,7 +82,7 @@ const projects = [
     name: '\"Is It Kevin\'s Birthday Today?\"',
     imageUrl: birthday,
     text: 'Birthday',
-    date: 'May 2023 - June 2023',
+    date: 'May 2023 ➜ June 2023',
     description: [
       'Developed as a way to experiment with the skills gained in my web development course, this website\'s main purpose is to display whether it is my birthday (August 2nd) today or not.',
       'The design of the website mimics the early operating systems of the 2000s with pixelated/flat designs and bold, bright colors.',
@@ -107,7 +107,7 @@ const projects = [
     name: 'Personal Website',
     imageUrl: site,
     text: 'Website',
-    date: 'June 2024 - August 2024',
+    date: 'June 2024 ➜ August 2024',
     description: [
       'Designed as a central hub to showcase my work and offer a concise introduction to who I am and my creative style.',
       'Presents a "resume-style" overview of my interests, projects, professional experience, and skills.',

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+import './styling/App.css';
 import smileImage from './assets/images/smile.png';
 import aboutMeImage from './assets/images/me.png';
 import projectsImage from './assets/images/projects.png';

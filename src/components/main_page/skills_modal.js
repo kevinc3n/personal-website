@@ -11,6 +11,7 @@ import { PiLinuxLogo } from "react-icons/pi";
 import { DiMysql } from "react-icons/di";
 import { FaDocker } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import { closeButton } from '../../styling/modal_styles';
 
 const styles = {
   '@keyframes bounce': {
@@ -54,7 +55,6 @@ const skillSections = [
     ],
   },
 ];
-
 
 const otherSkills = ['Git', 'Linux', 'AWS', 'Agile/Scrum'];
 
@@ -162,7 +162,7 @@ const ModalComponent = ({ open, onClose }) => (
             color: 'black',
           }}
         >
-          <CloseIcon sx={{ fontSize: 30 }} />
+          <CloseIcon sx={closeButton} />
         </IconButton>
 
         <h2 id="modal-modal-title" style={{ textAlign: 'center', marginTop: 0, fontFamily: '"Young Serif", serif', fontSize: 25 }}>Skills</h2>

@@ -3,6 +3,7 @@ import { Modal, Box, IconButton } from '@mui/material';
 import { FaInstagram, FaSpotify, FaLinkedin } from 'react-icons/fa';
 import CloseIcon from '@mui/icons-material/Close';
 import aboutMeImage from '../../assets/images/me.webp';
+import { closeButton } from '../../styling/modal_styles';
 
 const ModalComponent = ({ open, onClose }) => {
   const linkedinUrl = 'https://www.linkedin.com/in/kevincen/';
@@ -85,7 +86,7 @@ const ModalComponent = ({ open, onClose }) => {
             color: 'black',
           }}
         >
-          <CloseIcon sx={{ fontSize: 30 }} />
+          <CloseIcon sx={closeButton} />
         </IconButton>
         <Box
           sx={{
