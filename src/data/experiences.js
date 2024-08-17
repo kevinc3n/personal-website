@@ -37,7 +37,7 @@ const experiences = [
     date: 'August 2023 ➜ Present',
     role: 'Undergraduate Research Intern',
     description: [
-      "The Applications of Artificial Intelligence in Middle School Education (AAIMSE) project is a two-year research initiative led by the College of Education at the University of Florida, now in its second year.",
+      "The Applications of Artificial Intelligence in Middle School Education (AAIMSE) project is a two-year research initiative led by the College of Education at the University of Florida in conjunction with the P.K. Yonge Developmental Research School, now in its second year.",
       "The project aims to explore the most effective ways to integrate AI tools into middle school classrooms, both through curriculum enhancements and general classroom tools.",
       "In this project, I act as a resource for teachers seeking knowledge in computer science/machine learning and contribute to the development of tools/resources that support the project's objectives."
      ],
