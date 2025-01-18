@@ -15,9 +15,9 @@ const experiences = [
       'My primary role involves developing a deployment pipeline for the machine learning models created by the data science team, specifically the cloud detection model.',
     ],
     contributions: [
+      'Microservice Architecture: Collaborated on implementing a microservice architecture for a satellite image processing pipeline, utilizing Argo Workflows. This approach reduced peak memory consumption by 50% and enabled more parallel workloads, significantly improving resource efficiency and processing speed.',
       'Improved ML Model Serving: Enhanced the model serving pipeline for a cloud detection model using BentoML and Docker, expanding API capabilities and enriching the information delivered.',
       'Upgraded API Functionality: Reworked API endpoints, added debugging features, and added support for tracking hardware usage (CPU and GPU metrics).',
-      'Assembled a dataset of 90 inputs for the cloud detection model, manually annotating those with inaccurate outputs to generate ground truth data for improved model retraining.',
       'Developed Feedback System: Created a user feedback system to log and retrieve \"good\" and \"bad\" API inputs for model retraining.'
     ],
     learned: [
