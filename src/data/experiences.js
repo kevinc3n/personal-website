@@ -21,6 +21,7 @@ const experiences = [
       'Developed Feedback System: Created a user feedback system to log and retrieve \"good\" and \"bad\" API inputs for model retraining.'
     ],
     learned: [
+      'Learned key concepts related to Kubernetes and Argo Workflows (e.g. resource management and developing multi-step workflows) as well as working in an AWS cloud environment.',
       'Gained proficiency in coding within a Linux environment, including scripting and using shell commands effectively.',
       'Acquired experience in working with existing packages, understanding their architecture and limitations, and researching to adapt them to specific needs.',
       'Built knowledge in containerization tools (e.g. Docker, Docker Compose), focusing on creating tools with the end user’s experience in mind.'
