@@ -7,7 +7,7 @@ import { closeButton } from '../../styling/modal_styles';
 
 const ModalComponent = ({ open, onClose }) => {
   const linkedinUrl = 'https://www.linkedin.com/in/kevincen/';
-  const instagramUrl = 'https://www.instagram.com/kidthekevin/';
+  const instagramUrl = 'https://www.instagram.com/kevthecen/';
   const spotifyUrl = 'https://open.spotify.com/artist/1nCvm6kb6paTq9Hv73RSKB';
 
   const [expandedIndex, setExpandedIndex] = useState(-1);
