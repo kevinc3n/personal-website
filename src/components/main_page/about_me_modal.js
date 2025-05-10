@@ -23,7 +23,7 @@ const ModalComponent = ({ open, onClose }) => {
   const listItems = [
     {
       title: "➤ Education",
-      content: "I am a fourth-year undergraduate at the University of Florida (UF), majoring in Computer Science with a minor in Digital Arts & Sciences.",
+      content: "I graduated from the University of Florida (UF) in May 2025, majoring in Computer Science with a minor in Digital Arts & Sciences.",
     },
     {
       title: "➤ SWE",

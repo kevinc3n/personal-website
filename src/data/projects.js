@@ -3,8 +3,37 @@ import gatorchat from '../assets/images/gatorchat.png';
 import trackscore from '../assets/images/trackscore.png';
 import birthday from '../assets/images/birthday.png';
 import site from '../assets/images/site.png';
+import bitebook from '../assets/images/bitebook.png'
 
 const projects = [
+  {
+    name: 'BiteBook',
+    imageUrl: bitebook,
+    text: 'BiteBook',
+    date: 'January 2025 ➜ April 2025',
+    description: [
+      'BiteBook is a mobile app that lets users log, share, and explore homemade meals and recipes within their close social circle.',
+      'The purpose of the app is to bridge cooking and social interaction through personalized taste dashboards, AI-assisted recipe importing, and a friends-only feed.',
+      'Built with React Native, Firebase, and FastAPI + GraphQL, this app provides an engaging, analytics-backed cooking experience.'
+    ],
+    functionalities: [
+      'Create, import (via AI web scraper), and manage recipes.',
+      'Post cooked meals to a personalized feed with taste tagging.',
+      'Explore taste analytics with visualizations and friend-based recommendations.',
+      'Add close friends and send recipes via shareable links.',
+    ],
+    learned: [
+      'Utilized GraphQL (Strawberry + FastAPI) for modular, scalable API design.',
+      'Developed mobile-first design principles using React Native and Gluestack-UI.',
+      'Collaborated in an Agile workflow using Jira and Gitflow branching strategies.',
+      'How to deploy a Dockerized FastAPI backend to Render for mobile access.',
+      'Learned how to implement API testing using Pytest.',
+    ],
+    links: [
+      { title: 'Demo Video', url: 'https://www.youtube.com/watch?v=izqSMehx6bk' },
+      { title: 'Project Repositories', url: 'https://github.com/BiteBook-App' }
+    ]
+  },
   {
     name: 'strum.me',
     imageUrl: strumme,

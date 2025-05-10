@@ -7,7 +7,7 @@ const experiences = [
     name: 'Satlantis',
     imageUrl: satlantis,
     text: 'Satlantis',
-    date: 'May 2024 ➜ Present',
+    date: 'May 2024 ➜ May 2025',
     role: 'Software Engineer Intern',
     description: [
       'Satlantis is a small-satellite solutions company that combines machine learning with satellite imagery to enhance Earth observation capabilities.',
@@ -35,7 +35,7 @@ const experiences = [
     name: 'Research for AI in Education',
     imageUrl: aaimse,
     text: 'Research',
-    date: 'August 2023 ➜ Present',
+    date: 'August 2023 ➜ May 2025',
     role: 'Undergraduate Research Intern',
     description: [
       "The Applications of Artificial Intelligence in Middle School Education (AAIMSE) project is a two-year research initiative led by the College of Education at the University of Florida in conjunction with the P.K. Yonge Developmental Research School, now in its second year.",
