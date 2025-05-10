@@ -10,7 +10,7 @@ const projects = [
     name: 'BiteBook',
     imageUrl: bitebook,
     text: 'BiteBook',
-    date: 'January 2025 ➜ April 2025',
+    date: 'December 2024 ➜ April 2025',
     description: [
       'BiteBook is a mobile app that lets users log, share, and explore homemade meals and recipes within their close social circle.',
       'The purpose of the app is to bridge cooking and social interaction through personalized taste dashboards, AI-assisted recipe importing, and a friends-only feed.',
