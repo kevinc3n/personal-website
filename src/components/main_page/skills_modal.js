@@ -2,15 +2,15 @@ import React from 'react';
 import { Modal, Box, IconButton, Grid, Card, CardContent, Typography, CircularProgress, Chip } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import { FaPython, FaReact } from 'react-icons/fa';
-import { DiJava, DiPhp } from 'react-icons/di';
-import { PiFileCpp } from "react-icons/pi";
-import { SiFlask } from "react-icons/si";
-import { TbBrandNextjs, TbBrandGolang } from "react-icons/tb";
-import { PiLinuxLogo } from "react-icons/pi";
+
+import { FaPython, FaReact, FaDocker, FaGitAlt, FaHtml5, FaAws } from 'react-icons/fa';
+import { DiJava } from 'react-icons/di';
+import { PiFileCpp, PiLinuxLogo } from "react-icons/pi";
+import { SiFlask, SiFastapi, SiKubernetes, SiTerraform, SiJira } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import { DiMysql } from "react-icons/di";
-import { FaDocker } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+
 import { closeButton } from '../../styling/modal_styles';
 
 const styles = {
@@ -26,37 +26,45 @@ const skillSections = [
     title: 'Programming Languages',
     skills: [
       { name: 'Python', level: 90, icon: <FaPython /> },
-      { name: 'C++', level: 90, icon: <PiFileCpp /> },
-      { name: 'Java', level: 80, icon: <DiJava /> },
+      { name: 'C++', level: 85, icon: <PiFileCpp /> },
+      { name: 'Java', level: 85, icon: <DiJava /> },
+      { name: 'SQL', level: 85, icon: <DiMysql /> },
+      { name: 'JavaScript', level: 80, icon: <IoLogoJavascript /> },
+      { name: 'Shell Scripting', level: 70, icon: <PiLinuxLogo /> },
     ],
   },
   {
     title: 'Web Development',
     skills: [
-      { name: 'React.js', level: 80, icon: <FaReact /> },
+      { name: 'React', level: 80, icon: <FaReact /> },
+      { name: 'React Native', level: 75, icon: <FaReact /> },
       { name: 'Next.js', level: 70, icon: <TbBrandNextjs /> },
-      { name: 'Flask', level: 70, icon: <SiFlask /> },
+      { name: 'Flask', level: 75, icon: <SiFlask /> },
+      { name: 'FastAPI', level: 75, icon: <SiFastapi /> },
+      { name: 'HTML/CSS', level: 80, icon: <FaHtml5 /> },
     ],
   },
   {
-    title: 'Backend Tools',
+    title: 'DevOps & Cloud',
     skills: [
-      { name: 'JavaScript', level: 80, icon: <IoLogoJavascript /> },
-      { name: 'Golang', level: 70, icon: <TbBrandGolang /> },
-      { name: 'PHP', level: 70, icon: <DiPhp /> },
-    ],
-  },
-  {
-    title: 'DevOps and Data',
-    skills: [
-      { name: 'SQL', level: 90, icon: <DiMysql /> },
-      { name: 'Shell Scripting', level: 80, icon: <PiLinuxLogo /> },
       { name: 'Docker', level: 80, icon: <FaDocker /> },
+      { name: 'Kubernetes', level: 75, icon: <SiKubernetes /> },
+      { name: 'AWS', level: 70, icon: <FaAws /> },
+      { name: 'Terraform', level: 70, icon: <SiTerraform /> },
+      { name: 'Git/GitLab', level: 85, icon: <FaGitAlt /> },
+    ],
+  },
+  {
+    title: 'Project Management',
+    skills: [
+      { name: 'Gitflow', level: 80, icon: <FaGitAlt /> },
+      { name: 'Agile/SCRUM', level: 85, icon: <SiJira /> },
+      { name: 'Jira', level: 80, icon: <SiJira /> },
     ],
   },
 ];
 
-const otherSkills = ['Git', 'Linux', 'AWS', 'Agile/Scrum'];
+const otherSkills = ['Linux', 'VS Code', 'Graphic Design', 'Music Production'];
 
 const CircularProgressWithLabel = ({ value }) => (
   <Box sx={{ position: 'relative', display: 'inline-flex', justifyContent: 'center', alignItems: 'center' }}>

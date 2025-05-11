@@ -11,25 +11,27 @@ const experiences = [
     role: 'Software Engineer Intern',
     description: [
       'Satlantis is a small-satellite solutions company that combines machine learning with satellite imagery to enhance Earth observation capabilities.',
-      'I am currently part of the Software Engineering team at Satlantis, where I focus on MLOps/DevOps. ',
-      'My primary role involves developing a deployment pipeline for the machine learning models created by the data science team, specifically the cloud detection model.',
+      'As part of the Software Engineering team, I focused on MLOps and DevOps infrastructure to support and optimize the company’s satellite image processing and ML pipelines.',
+      'My role centered on helping build and manage Argo Workflows running on an AWS Kubernetes cluster and serving containerized ML models.'
     ],
     contributions: [
-      'Microservice Architecture: Collaborated on implementing a microservice architecture for a satellite image processing pipeline, utilizing Argo Workflows. This approach reduced peak memory consumption by 50% and enabled more parallel workloads, significantly improving resource efficiency and processing speed.',
-      'Improved ML Model Serving: Enhanced the model serving pipeline for a cloud detection model using BentoML and Docker, expanding API capabilities and enriching the information delivered.',
-      'Upgraded API Functionality: Reworked API endpoints, added debugging features, and added support for tracking hardware usage (CPU and GPU metrics).',
-      'Developed Feedback System: Created a user feedback system to log and retrieve \"good\" and \"bad\" API inputs for model retraining.'
+      'Developed scalable microservices for satellite imagery processing using Kubernetes and Argo Workflows, reducing peak memory usage by 50% and computation time by over 97% (from 24 hours to 30 minutes).',
+      'Helped maintain a Kubernetes cluster hosted on AWS, improving resource efficiency through Cognito-based authentication and automated pod retry strategies.',
+      'Enhanced machine learning model serving for a cloud detection pipeline using BentoML and Docker, expanding API capabilities and improving deployment stability and accessibility.',
+      'Upgraded backend APIs by adding debugging tools, GPU/CPU monitoring endpoints, and usage metrics to assist in system observability and performance tuning.',
+      'Engineered a PostgreSQL-backed feedback logging system to capture and retrieve labeled API inputs for iterative model improvement and retraining workflows.'
     ],
     learned: [
-      'Learned key concepts related to Kubernetes and Argo Workflows (e.g. resource management and developing multi-step workflows) as well as working in an AWS cloud environment.',
-      'Gained proficiency in coding within a Linux environment, including scripting and using shell commands effectively.',
-      'Acquired experience in working with existing packages, understanding their architecture and limitations, and researching to adapt them to specific needs.',
-      'Built knowledge in containerization tools (e.g. Docker, Docker Compose), focusing on creating tools with the end user’s experience in mind.'
+      'Gained deep experience in Kubernetes (e.g., pod scheduling, secrets management) and Argo Workflows for building multi-step, resource-aware pipelines.',
+      'Deepened cloud experience by integrating authentication with AWS Cognito and understanding how to automate infrastructure deployment using Terraform.',
+      'Improved proficiency in Linux scripting, shell automation, and working with observability tools for monitoring system performance.',
+      'Learned to navigate and extend existing open-source packages, adapting them to fit production needs while keeping usability and robustness in mind.',
+      'Sharpened skills in containerization with Docker and Docker Compose, focusing on developing maintainable and scalable microservices.'
     ],
     links: [
-      {title: 'Satlantis Website', url: 'https://www.satlantis.com/'},
-      {title: 'Satlantis (U.S.) LinkedIn', url: 'https://www.linkedin.com/company/satlantis-llc'},
-    ],
+      { title: 'Satlantis Website', url: 'https://www.satlantis.com/' },
+      { title: 'Satlantis (U.S.) LinkedIn', url: 'https://www.linkedin.com/company/satlantis-llc' }
+    ]
   },
   {
     name: 'Research for AI in Education',
@@ -38,24 +40,24 @@ const experiences = [
     date: 'August 2023 ➜ May 2025',
     role: 'Undergraduate Research Intern',
     description: [
-      "The Applications of Artificial Intelligence in Middle School Education (AAIMSE) project is a two-year research initiative led by the College of Education at the University of Florida in conjunction with the P.K. Yonge Developmental Research School, now in its second year.",
-      "The project aims to explore the most effective ways to integrate AI tools into middle school classrooms, both through curriculum enhancements and general classroom tools.",
-      "In this project, I act as a resource for teachers seeking knowledge in computer science/machine learning and contribute to the development of tools/resources that support the project's objectives."
-     ],
+      'The Applications of Artificial Intelligence in Middle School Education (AAIMSE) was a two-year research initiative led by the University of Florida College of Education in partnership with the P.K. Yonge Developmental Research School.',
+      'The project explored effective strategies for integrating AI tools into middle school classrooms through curriculum enhancement and practical tool development.',
+      'As a research intern, I supported teachers in understanding and implementing AI by providing technical guidance and contributing to the creation of tools that aligned with the project’s educational goals.'
+    ],
     contributions: [
-      'Engaged with teachers to understand their goals and identify how existing AI tools could be best adapted to meet their needs.',
-      'Led the creation of interactive activities to illustrate and visualize machine learning concepts, enhancing teachers\' understanding of complex ML topics.',
-      'Assisted in the development of the AAIMSE project website which centralizes resources, dates, and information related to the research initiative.',
-      'Contributed to both the frontend and backend development of a ChatGPT clone for a study assessing how different site layouts impact the AI assistant\'s effectiveness in supporting students.'
+      'Collaborated with middle school teachers to understand their instructional goals and identified AI tools best suited to enhance classroom learning.',
+      'Co-developed both frontend and backend components of a ChatGPT-style assistant for a research study, evaluating how different UI layouts influence student interaction and learning outcomes.',
+      'Designed and developed interactive web-based activities that visualize machine learning concepts, improving teacher comprehension and engagement.',
+      'Helped build and maintain the official AAIMSE website, centralizing educational resources, project updates, and research tools.'
     ],
     learned: [
-      'Learned how to explain computer science and machine learning concepts in a clear and accessible manner for those without a CS background.',
-      'Gained experience in web development using Python\'s Flask framework and managed a PostgreSQL database via AWS.',
-      'Acquired insights into the methodologies and processes involved in developing research projects, specifically within the College of Education.'
+      'Improved ability to communicate computer science and machine learning concepts in an accessible and educationally meaningful way for non-CS audiences.',
+      'Gained hands-on experience with web development using Flask and PostgreSQL, deploying components within an AWS-hosted environment.',
+      'Developed a deeper understanding of education research processes, including user testing, feedback cycles, and collaborative design with educators.'
     ],
     links: [
-      {title: 'AAIMSE Website', url: 'https://education.ufl.edu/aaimse/'},
-    ],
+      { title: 'AAIMSE Website', url: 'https://education.ufl.edu/aaimse/' }
+    ]
   },
   {
     name: 'Hewlett-Packard (HP)',
