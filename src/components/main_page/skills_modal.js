@@ -6,7 +6,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { FaPython, FaReact, FaDocker, FaGitAlt, FaHtml5, FaAws } from 'react-icons/fa';
 import { DiJava } from 'react-icons/di';
 import { PiFileCpp, PiLinuxLogo } from "react-icons/pi";
-import { SiFlask, SiFastapi, SiKubernetes, SiTerraform, SiJira } from "react-icons/si";
+import { SiFlask, SiFastapi, SiKubernetes, SiJira } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { DiMysql } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -50,7 +50,6 @@ const skillSections = [
       { name: 'Docker', level: 80, icon: <FaDocker /> },
       { name: 'Kubernetes', level: 75, icon: <SiKubernetes /> },
       { name: 'AWS', level: 70, icon: <FaAws /> },
-      { name: 'Terraform', level: 70, icon: <SiTerraform /> },
       { name: 'Git/GitLab', level: 85, icon: <FaGitAlt /> },
     ],
   },
@@ -64,7 +63,7 @@ const skillSections = [
   },
 ];
 
-const otherSkills = ['Linux', 'VS Code', 'Graphic Design', 'Music Production'];
+const otherSkills = ['Linux', 'Terraform', 'Helm', 'VS Code', 'Graphic Design', 'Music Production'];
 
 const CircularProgressWithLabel = ({ value }) => (
   <Box sx={{ position: 'relative', display: 'inline-flex', justifyContent: 'center', alignItems: 'center' }}>
