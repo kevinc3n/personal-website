@@ -47,7 +47,7 @@ const projects = [
     functionalities: [
       'Simple, clean interface that lets a user play an acoustic guitar into their microphone.',
       'Once a certain volume decibel is detected, a pipeline will trigger where a snippet is captured and preprocessed for the ML model.',
-      'Inference is run on the sample and the classification is returned to the frontend/user using web-sockets.',
+      'Inference is performed on the audio sample, and classification results are delivered to the frontend via web-socket within two seconds, ensuring a seamless user experience.',
     ],
     learned: [
       'How to fully implement a machine learning pipeline, utilizing best practices when training and tuning the CNN model (achieving 90% testing accuracy).',

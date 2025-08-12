@@ -46,9 +46,9 @@ const experiences = [
     ],
     contributions: [
       'Collaborated with middle school teachers to understand their instructional goals and identified AI tools best suited to enhance classroom learning.',
-      'Co-developed both frontend and backend components of a ChatGPT-style assistant for a research study, evaluating how different UI layouts influence student interaction and learning outcomes.',
+      'Developed a ChatGPT-style platform for a research study measuring students\' AI literacy, capturing and analyzing 2,800+ essay-writing interactions from 20+ students.',
       'Designed and developed interactive web-based activities that visualize machine learning concepts, improving teacher comprehension and engagement.',
-      'Helped build and maintain the official AAIMSE website, centralizing educational resources, project updates, and research tools.'
+      'Assisted in building and maintaining the official AAIMSE website, centralizing project updates and research tools, and aggregated over 100 AI educational resources for the initiative.'
     ],
     learned: [
       'Improved ability to communicate computer science and machine learning concepts in an accessible and educationally meaningful way for non-CS audiences.',
