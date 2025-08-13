@@ -53,7 +53,7 @@ const experiences = [
     learned: [
       'Improved ability to communicate computer science and machine learning concepts in an accessible and educationally meaningful way for non-CS audiences.',
       'Gained hands-on experience with web development using Flask and PostgreSQL, deploying components within an AWS-hosted environment.',
-      'Developed a deeper understanding of education research processes, including user testing, feedback cycles, and collaborative design with educators.'
+      'Developed a deeper understanding of education research processes, including user testing, feedback cycles, and collaborative design with educators, as part of a cross-functional team spanning technical, pedagogical, and research expertise.'
     ],
     links: [
       { title: 'AAIMSE Website', url: 'https://education.ufl.edu/aaimse/' }
