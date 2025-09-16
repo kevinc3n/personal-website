@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Modal, Box, IconButton } from '@mui/material';
+import { Modal, Box, IconButton, Fade } from '@mui/material';
 import { FaInstagram, FaSpotify, FaLinkedin } from 'react-icons/fa';
 import CloseIcon from '@mui/icons-material/Close';
-import aboutMeImage from '../../assets/images/me.webp';
+import aboutMeImage from '../../assets/images/kevin_photo.jpg';
 import { closeButton } from '../../styling/modal_styles';
 
 const ModalComponent = ({ open, onClose }) => {
@@ -49,33 +49,35 @@ const ModalComponent = ({ open, onClose }) => {
       onClose={onClose}
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
+      closeAfterTransition
     >
-      <Box
-        sx={{
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          height: '50%',
-          width: '50%',
-          boxShadow: '0 4px 0px rgba(0, 0, 0, 1)',
-          bgcolor: '#fffdf0',
-          p: 4,
-          borderRadius: 4,
-          border: '3.5px solid #000',
-          display: 'flex',
-          flexDirection: { xs: 'column-reverse', md: 'row' },
-          '@media (max-width: 900px)': {
-            top: '4%',
-            left: '10%',
-            right: '10%',
-            bottom: '4%',
-            height: 'auto',
-            width: 'auto',
-            transform: 'none',
-          },
-        }}
-      >
+      <Fade in={open} timeout={300}>
+        <Box
+          sx={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            height: '50%',
+            width: '50%',
+            boxShadow: '0 4px 0px rgba(0, 0, 0, 1)',
+            bgcolor: '#fffdf0',
+            p: 4,
+            borderRadius: 4,
+            border: '3.5px solid #000',
+            display: 'flex',
+            flexDirection: { xs: 'column-reverse', md: 'row' },
+            '@media (max-width: 900px)': {
+              top: '4%',
+              left: '10%',
+              right: '10%',
+              bottom: '4%',
+              height: 'auto',
+              width: 'auto',
+              transform: 'none',
+            },
+          }}
+        >
         <IconButton
           aria-label="close"
           onClick={onClose}
@@ -236,7 +238,8 @@ const ModalComponent = ({ open, onClose }) => {
             </ul>
           </Box>
         </Box>
-      </Box>
+        </Box>
+      </Fade>
     </Modal>
   );
 };

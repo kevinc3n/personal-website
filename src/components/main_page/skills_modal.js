@@ -1,5 +1,4 @@
-import React from 'react';
-import { Modal, Box, IconButton, Grid, Card, CardContent, Typography, CircularProgress, Chip } from '@mui/material';
+import { Modal, Box, IconButton, Grid, Card, CardContent, Typography, CircularProgress, Chip, Fade } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
@@ -139,75 +138,78 @@ const ModalComponent = ({ open, onClose }) => (
     onClose={onClose}
     aria-labelledby="modal-modal-title"
     aria-describedby="modal-modal-description"
+    closeAfterTransition
   >
-    <Box
-      sx={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: '70%',
-        maxWidth: '800px',
-        bgcolor: '#fffdf0',
-        p: 4,
-        borderRadius: 4,
-        border: '3.5px solid #000',
-        boxShadow: '0 8px 0px rgba(0, 0, 0, 1)',
-        display: 'flex',
-        flexDirection: 'column',
-        height: '80vh',
-      }}
-    >
-      <Box sx={{ flex: '0 1 auto', textAlign: 'center' }}>
-        <IconButton
-          aria-label="close"
-          onClick={onClose}
-          sx={{
-            position: 'absolute',
-            top: 16,
-            right: 16,
-            color: 'black',
-          }}
-        >
-          <CloseIcon sx={closeButton} />
-        </IconButton>
-
-        <h2 id="modal-modal-title" style={{ textAlign: 'center', marginTop: 0, fontFamily: '"Young Serif", serif', fontSize: 25 }}>Skills</h2>
-        
-        <Box sx={{ marginTop: 2, ...styles }}>
-          <Typography
-            variant="body1"
-            component="div"
-            sx={{
-              fontFamily: '"Belanosima", sans-serif',
-              fontSize: '1.2rem',
-              animation: 'bounce 5s infinite',
-            }}
-          >
-            Scroll for more
-            <ArrowDownwardIcon sx={{ fontSize: 25, verticalAlign: 'middle', marginLeft: 0.5 }} />
-          </Typography>
-        </Box>
-      </Box>
+    <Fade in={open} timeout={300}>
       <Box
         sx={{
-          flex: '1 1 auto',
-          overflow: 'auto',
-          marginTop: 4,
-          '&::-webkit-scrollbar': {
-            width: '0',
-          },
-          '&::-webkit-scrollbar-track': {
-            background: 'transparent',
-          },
-          '&::-webkit-scrollbar-thumb': {
-            background: 'transparent',
-          },
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: '70%',
+          maxWidth: '800px',
+          bgcolor: '#fffdf0',
+          p: 4,
+          borderRadius: 4,
+          border: '3.5px solid #000',
+          boxShadow: '0 8px 0px rgba(0, 0, 0, 1)',
+          display: 'flex',
+          flexDirection: 'column',
+          height: '80vh',
         }}
       >
-        <SkillsComponent />
+        <Box sx={{ flex: '0 1 auto', textAlign: 'center' }}>
+          <IconButton
+            aria-label="close"
+            onClick={onClose}
+            sx={{
+              position: 'absolute',
+              top: 16,
+              right: 16,
+              color: 'black',
+            }}
+          >
+            <CloseIcon sx={closeButton} />
+          </IconButton>
+
+          <h2 id="modal-modal-title" style={{ textAlign: 'center', marginTop: 0, fontFamily: '"Young Serif", serif', fontSize: 25 }}>Skills</h2>
+          
+          <Box sx={{ marginTop: 2, ...styles }}>
+            <Typography
+              variant="body1"
+              component="div"
+              sx={{
+                fontFamily: '"Belanosima", sans-serif',
+                fontSize: '1.2rem',
+                animation: 'bounce 5s infinite',
+              }}
+            >
+              Scroll for more
+              <ArrowDownwardIcon sx={{ fontSize: 25, verticalAlign: 'middle', marginLeft: 0.5 }} />
+            </Typography>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            flex: '1 1 auto',
+            overflow: 'auto',
+            marginTop: 4,
+            '&::-webkit-scrollbar': {
+              width: '0',
+            },
+            '&::-webkit-scrollbar-track': {
+              background: 'transparent',
+            },
+            '&::-webkit-scrollbar-thumb': {
+              background: 'transparent',
+            },
+          }}
+        >
+          <SkillsComponent />
+        </Box>
       </Box>
-    </Box>
+    </Fade>
   </Modal>
 );
 

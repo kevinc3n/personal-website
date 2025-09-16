@@ -1,5 +1,4 @@
-import React from 'react';
-import { Modal, Box, IconButton } from '@mui/material';
+import { Modal, Box, IconButton, Fade } from '@mui/material';
 import Slider from 'react-slick';
 import CloseIcon from '@mui/icons-material/Close';
 import { useNavigate } from 'react-router-dom';
@@ -20,33 +19,36 @@ const ModalComponent = ({ open, onClose }) => {
     <Modal
       open={open}
       onClose={onClose}
+      closeAfterTransition
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
     >
-      <Box
-        sx={modalContainer}
-      >
-        <IconButton
-          aria-label="close"
-          onClick={onClose}
-          sx={iconButton}
+      <Fade in={open} timeout={300}>
+        <Box
+          sx={modalContainer}
         >
-          <CloseIcon sx={closeButton} />
-        </IconButton>
+          <IconButton
+            aria-label="close"
+            onClick={onClose}
+            sx={iconButton}
+          >
+            <CloseIcon sx={closeButton} />
+          </IconButton>
 
-        <h2 id="modal-modal-title" class='modal-title'>Projects</h2>
-        <Slider {...settings}>
-          {projects.map((project, index) => (
-            <div key={index}>
-              <SlideComponent
-                imageUrl={project.imageUrl}
-                onClick={() => handleSlideClick(project)}
-                text={project.text}
-              />
-            </div>
-          ))}
-        </Slider>
-      </Box>
+          <h2 id="modal-modal-title" className='modal-title'>Projects</h2>
+          <Slider {...settings}>
+            {projects.map((project, index) => (
+              <div key={index}>
+                <SlideComponent
+                  imageUrl={project.imageUrl}
+                  onClick={() => handleSlideClick(project)}
+                  text={project.text}
+                />
+              </div>
+            ))}
+          </Slider>
+        </Box>
+      </Fade>
     </Modal>
   );
 };
