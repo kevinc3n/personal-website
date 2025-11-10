@@ -15,7 +15,7 @@ const experiences = [
       'My role centered on helping build and manage Argo Workflows running on an AWS Kubernetes cluster and serving containerized ML models.'
     ],
     contributions: [
-      'Developed scalable microservices for satellite imagery processing using Kubernetes and Argo Workflows, reducing peak memory usage by 50% and computation time by over 97% (from 24 hours to 30 minutes).',
+      'Contributed to decoupling a monolithic satellite image processing pipeline into modular microservices and orchestrated them in a DAG workflow using Argo Workflows, reducing peak memory usage by 50% and cutting computation time from 24 hours to 30 minutes.',
       'Helped maintain a Kubernetes cluster hosted on AWS, improving resource efficiency through Cognito-based authentication and automated pod retry strategies.',
       'Enhanced machine learning model serving for a cloud detection pipeline using BentoML and Docker, expanding API capabilities and improving deployment stability and accessibility.',
       'Upgraded backend APIs by adding debugging tools, GPU/CPU monitoring endpoints, and usage metrics to assist in system observability and performance tuning.',
