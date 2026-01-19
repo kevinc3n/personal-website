@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Modal, Box, IconButton, Fade } from '@mui/material';
 import { FaInstagram, FaSpotify, FaLinkedin } from 'react-icons/fa';
 import CloseIcon from '@mui/icons-material/Close';
-import aboutMeImage from '../../assets/images/kevin_photo.jpg';
+import aboutMeImage from '../../assets/images/kevin_photo.png';
 import { closeButton } from '../../styling/modal_styles';
 
 const ModalComponent = ({ open, onClose }) => {

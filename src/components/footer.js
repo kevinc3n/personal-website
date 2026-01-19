@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="copyright">
-        &copy;2025 kevin cen
+        &copy;2026 kevin cen
       </div>
       <div className="copyright">
         Made with React.js

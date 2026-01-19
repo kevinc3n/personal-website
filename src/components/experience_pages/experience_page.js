@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { Box, Typography } from '@mui/material';
 import '../../styling/App.css';

@@ -1,8 +1,30 @@
+import hubspot from '../assets/images/hubspot.png'
 import satlantis from '../assets/images/satlantis.jpg';
 import aaimse from '../assets/images/aaimse.png';
 import hp from '../assets/images/hp.png';
 
 const experiences = [
+  {
+    name: 'HubSpot',
+    imageUrl: hubspot,
+    text: 'HubSpot',
+    date: 'October 2025 ➜ Present',
+    role: 'Software Engineer',
+    description: [
+      'HubSpot is a customer platform that unifies marketing, sales, customer service, operations, and website management in a single system built around a customer relationship management (CRM) platform.'
+    ],
+    contributions: [
+      'I am a backend software engineer on the Email Services team, where I support the development of new features and help maintain systems responsible for sending marketing emails at scale.',
+    ],
+    learned: [
+      'Continuously learning and applying best practices, including clean code principles and recognizing common anti-patterns.',
+      'Learning how to write performance-conscious, scalable, and maintainable code while gaining experience building backwards-compatible features that enable safe rollouts in large systems.',
+      'Becoming familiar with managing time-sensitive on-call responsibilities.'
+    ],
+    links: [
+      { title: 'HubSpot Website', url: 'https://hubspot.com/' }
+    ]
+  },
   {
     name: 'Satlantis',
     imageUrl: satlantis,
